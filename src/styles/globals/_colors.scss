@@ -1,0 +1,53 @@
+$primary-color: blue;
+$error-color: red;
+$success-color: green;
+$info-color: gray;
+$warning-color: yellow;
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-error {
+  color: $error-color;
+}
+
+.text-success {
+  color: $success-color;
+}
+
+.text-info {
+  color: $info-color;
+}
+
+.text-warning {
+  color: $warning-color;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.bg-primary {
+  background-color: $primary-color;
+}
+
+.bg-error {
+  background-color: $error-color;
+}
+
+.bg-success {
+  background-color: $success-color;
+}
+
+.bg-info {
+  background-color: $info-color;
+}
+
+.bg-warning {
+  background-color: $warning-color;
+}
+
+.bg-black {
+  background-color: #000000;
+}
