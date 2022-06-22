@@ -1,0 +1,115 @@
+@use "../../../styles/utils/breakpoints";
+
+.navbar{
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+
+    li{
+        list-style: none;
+        padding: 0.75rem;
+        text-align: center;
+
+        .active{
+            color: blue;
+            font-weight: bold;
+        }
+
+        a{
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__name{
+        font-weight: bold;
+        font-size: 1.75rem;
+        display: inline-flex;
+        align-items: center;
+        padding-left: 0.5rem;
+    }
+    
+    &__icon{
+        height: 4rem;
+    }
+
+    &__burger{
+        display: inherit;
+        font-size: 1.25rem;
+        background-color: transparent;
+        border:none;
+        transition: 0.35s;  
+    }
+
+    &__menu{
+        margin-top: 0.5rem;
+        position: absolute;
+        width :100%;
+        left: 0;
+        right: 0;
+        transition: 0.2s;        
+        height: 0px;
+        overflow: hidden;
+        background-color: #ffffff;
+        border-radius: 15px;
+        z-index: 90;
+    }
+
+    &__open{    
+        height: 215px ;
+    }
+
+    ul{
+        padding-left: 0;
+        bottom: 0;
+    }
+
+    @include breakpoints.breakpoint("lg"){
+        ul{
+            display: flex;
+            background-color: inherit;
+        }
+
+        &__menu{
+            margin-top: 0;
+            height: auto;
+            background-color: inherit;
+        }
+
+        &__content{
+            flex-direction: row;
+            justify-content: space-between ;
+        }
+
+        li{
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            padding-bottom: 0;
+        }
+
+        &__burger{
+            display: none;
+        }
+
+        &__menu{
+              position: static;
+        }
+
+        &__menus{
+          display: flex;
+          align-items: center;
+        }
+    }
+
+}

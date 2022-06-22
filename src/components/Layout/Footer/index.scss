@@ -1,0 +1,69 @@
+@use "../../../styles/utils/breakpoints";
+
+
+.footer{
+   position: absolute;
+   bottom: 0;
+   background-color: rgb(253, 233, 79) ;
+   padding: 0.5rem;
+   width: 100%;
+
+   li{
+      list-style: none;
+      padding: 0.25rem;
+  }
+
+  &__menu{
+   font-weight: bold;
+  }
+
+  
+  &__logo{
+   display: inline-flex;
+   align-items: center;
+   font-size: 1.75rem;
+   font-weight: bold;
+   padding-left: 0.25rem;
+ }
+
+
+ &__icon{
+   height: 4rem;
+ }
+
+      
+   &__top{
+      padding: 1rem;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+   }
+
+   &__bottom{
+      display: flex;
+      flex-direction: column;
+
+
+   }
+
+   &__social{
+     display: flex;
+     justify-content:space-around;
+     padding: 0;
+   }
+
+   &__alright{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+   @include breakpoints.breakpoint("lg"){
+      &__bottom{
+          flex-direction: row;
+         justify-content: space-between;
+      }
+  }
+
+
+}
