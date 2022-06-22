@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import "./index.scss";
 import { FaGripLines, FaGripLinesVertical } from "react-icons/fa";
 

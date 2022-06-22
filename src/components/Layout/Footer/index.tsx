@@ -37,7 +37,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <hr></hr>
+        {/* <hr></hr> */}
         <div className="footer__bottom">
           <div className="footer__alright">
             © 2022 CSS APE™. All Rights Reserved.
