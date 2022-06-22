@@ -170,6 +170,28 @@ $miltiple-space: 0.25rem;
   align-self: stretch !important;
 }
 
+.text-start {
+  text-align: left !important;
+}
+
+.text-end {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-nowrap {
+  white-space: nowrap !important;
+}
+
+.text-break {
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+
 .float-left {
   float: left !important;
 }
@@ -576,7 +598,7 @@ $miltiple-space: 0.25rem;
 }
 
 .container-center {
-  max-width: 1024px !important;
+  max-width: 1366px !important;
   margin: auto;
 }
 
